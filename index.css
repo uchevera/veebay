@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  padding: 10px 40px 10px 40px;
+}
+
+#contact-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d3e50;
+  border-bottom: 1px solid #e5e5e5;
+  color: white;
+  font-size: 0.85em;
+  font-size: 12px;
+}
+
+#contact-nav .container,
+#contact-nav .social-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+i.fab,
+i.fas {
+  margin-right: 0.5rem;
+  color: #f8b239;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  color: black;
+}
+
+.sticky-nav {
+  top: 0;
+  position: sticky;
+  z-index: 500;
+  background-color: #f1f1f1;
+  border: none;
+  border-bottom: #ff450050;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-items ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+.nav-items ul li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+.nav-items ul li a:hover {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  color: orangered;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #4b5259;
+}
+.main-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  position: relative;
+  width: 100vw;
+}
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.header-img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+/*  */
+
+.main-header .header-img {
+  height: 100vh;
+  width: 100%;
+}
+
+.main-header .header-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  top: 25%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-header .header-text h2 {
+  font-size: 56px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+.main-header .header-text p {
+  line-height: 2rem;
+  width: 90%;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.gallery-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-section h2 {
+  font-size: 56px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.images div {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #ffffff;
+  transition: all ease-in 100ms;
+}
+
+.images div:hover {
+  border: 2px solid #ff450050;
+}
+
+.gallery-img1 {
+  background-image: url("images/image1.jpg");
+}
+
+.gallery-img2 {
+  background-image: url("images/image2.jpg");
+}
+
+.gallery-img3 {
+  background-image: url("images/image3.jpg");
+}
+
+.gallery-img4 {
+  background-image: url("images/image4.jpg");
+}
+
+.gallery-img5 {
+  background-image: url("images/image5.jpg");
+}
+
+.gallery-img6 {
+  background-image: url("images/image6.jpg");
+}
+
+.header-text p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin: 16px 0px 24px;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+  padding: 0px 90px;
+  width: 500px;
+}
+
+.sub-header {
+  padding: 60px 0;
+  margin-top: 4rem;
+  text-align: center;
+  background-color: white;
+}
+.sub-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.sub-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.enroll-container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d3e50;
+  color: white;
+  height: 120px;
+}
+
+.enroll-container .container h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.enroll-container .container button {
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: #2d3e50;
+  border: 1px solid white;
+  color: white;
+  font-weight: 500;
+  /* white-space: nowrap; */
+}
+.enroll-container .container button:hover {
+  background: orangered;
+  cursor: pointer;
+  transition: all ease-in 100ms;
+}
+
+.sub-header h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1em;
+}
+
+.sub-header h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #a0a0a0;
+}
+
+.core-values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: auto;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.core-value1-icon {
+  background-color: tomato;
+}
+
+.core-value2-icon {
+  background-color: #2d3e50;
+}
+
+.core-value3-icon {
+  background-color: #56509f;
+}
+
+.core-values p {
+  line-height: 1.4em;
+  color: black;
+  width: 90%;
+}
+
+.core-values h5 {
+  /* line-height: 1.4em; */
+  color: black;
+  font-size: 24px;
+  color: #2d3e50;
+}
+
+.core-value-container {
+  width: 350px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 38px;
+  text-align: center;
+}
+
+.about-section {
+  height: fit-content;
+  padding: 20px 0;
+  margin-top: 40px;
+  position: relative;
+}
+
+.about-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+
+.about-section strong {
+  color: #2d3e50;
+}
+
+.about-writeup-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.about-writeup-section p {
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 38px;
+}
+
+.about-photo {
+  height: 300px;
+  width: 100%;
+
+  /* background-image: url("images/aboutphoto.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-radius: 8px;
+  overflow: hidden;
+  /* margin: 0 50px; */
+}
+
+footer {
+  background-color: #0b1825;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.85em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+footer .container,
+footer .container .footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .container .footer-item p {
+  max-width: 500px;
+  line-height: 2;
+}
+
+.gallery-section {
+  background-color: white;
+}
+
+.gallery-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
+  justify-content: center;
+  padding-top: 40px;
+  /* margin: 80px auto; */
+}
+
+.gallery-section .container section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.gallery-section .container .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  /* margin: 80px auto; */
+}
+
+.newsletter-signup {
+  margin-top: 40px;
+  padding: 50px 0;
+  background-color: orangered;
+}
+
+.newsletter-signup .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  font-size: 0.85em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.newsletter-signup .container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.newsletter-signup .container h2 {
+  font-size: 2rem;
+}
+
+.newsletter-signup .container .newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-signup .container .newsletter-form input {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  padding: 0px 10px;
+}
+
+.newsletter-signup .container .newsletter-form button {
+  /* width: 100%; */
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  padding: 0px 10px;
+  background-color: #0b1825;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.newsletter-signup .container .newsletter-form button:hover {
+  background-color: #f1f1f1;
+  color: #f8b239;
+}
+
+.newsletter-signup .container .newsletter-form button:focus {
+  outline: none;
+}
+
+.newsletter-signup .container .newsletter-form button:active {
+  background-color: #f8b239;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .core-values {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .icon-container {
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+  }
+
+  .sub-header h2 {
+    font-size: 40px;
+    /* font-weight: 300;
+    line-height: 1em; */
+  }
+
+  .gallery-section .container .images {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    /* margin: 80px auto; */
+  }
+
+  .main-header .header-text h2 {
+    font-size: 36px;
+    /* text-transform: uppercase;
+    margin-bottom: 5px;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif; */
+  }
+  .about-section .container {
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* gap: 50px;
+    height: 400px; */
+  }
+
+  .about-writeup-section p {
+    text-align: center;
+  }
+
+  .enroll-container .container h2 {
+    font-size: 18px;
+  }
+
+  .enroll-container .container button {
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+
+  .container {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .images div {
+    /* border-radius: 8px;
+    overflow: hidden; */
+    height: 250px;
+    width: 350px;
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: all ease-in 100ms; */
+  }
+
+  .newsletter-signup .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .newsletter-signup .container .text {
+    text-align: center;
+  }
+}
